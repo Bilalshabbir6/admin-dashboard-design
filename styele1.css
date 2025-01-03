@@ -1,0 +1,159 @@
+ 
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    
+  }
+  
+  .dashboard1 {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar content";
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+  }
+  .icon{
+    width: 30px;
+    height:30px;
+  }
+  .header {
+    grid-area: header;
+    background-color: green;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 1215px;
+  }
+  
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color:green;
+    color: white;
+    padding: 20px;
+  }
+  
+  .sidebar ul{
+    list-style: none;
+    padding:10px;
+    font-size: larger;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  
+  
+  .content {
+    grid-area: content;
+    padding: 50px;
+    
+    background-color: #f4f4f4;
+  }
+  
+  h2 {
+    margin-top: 50px;
+  }
+
+.main-content {
+  width: 80%;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:skyblue;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 0px;
+  width: 950px;
+  }
+
+header .profile {
+  text-align: right;
+}
+
+header .profile .name {
+  font-weight: bold;
+}
+
+.welcome-section {
+  background-color:skyblue;
+  padding: 30px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 585px;
+  margin-top:20px;
+  
+  
+}
+.photo{
+  width: 200px;
+  height: 200px;
+  margin-left: 300px;
+  margin-top:-200px;  
+}
+ 
+.stats-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  
+  
+}
+
+.employee-month {
+  flex: 1;
+  text-align:center;
+  background-color:skyblue;
+  padding-left: 20px;
+  border-radius: 5px;
+  height: 200px;
+  width: 250px;
+  margin-top: -275px;
+  margin-left: 663px;
+  width: 310px;
+  height:200px;
+
+}
+
+.employee-month img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  
+}
+
+.attendance-table {
+  flex: 2;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  padding-top:300px;
+}
+
+.attendance-table th, .attendance-table td {
+  border: 2px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  margin-bottom:-50px;
+  
+  
+}
+
+.attendance-table th {
+  background-color: #f0f0f0;
+}
